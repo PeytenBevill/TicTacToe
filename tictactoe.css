@@ -1,6 +1,16 @@
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-image: linear-gradient(to bottom, rgb(217, 119, 217), rgb(80, 45, 84));
+}
+
+
 .jumbotron {
   margin: 5% auto;
-  margin-left: 43%;
+  /* margin-left: 43%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 td {
@@ -9,7 +19,10 @@ td {
   text-align: center;
   border: 5px solid black;
   font-size: 100px;
+  color: black;
+  -webkit-text-stroke: 1px yellow;
 }
+
 
 table {
   margin: auto auto;
