@@ -46,11 +46,14 @@ const addMarker = (id) => {
   
   document.getElementById(id).innerHTML = currentMarker
 
+  console.log('document.getElementById(id).innerHTML', document.getElementById(id).innerHTML)
 
   const row = parseInt(id.charAt(0))
   const column = parseInt(id.charAt(2))
   board[row][column] = currentMarker
-  checkForWin()
+  setTimeout(function(){
+    checkForWin()
+  }, 10)
   
 }
 
@@ -143,6 +146,8 @@ const checkForWin = () => {
     || (board[0][2] == "O" && board[1][1] == "O" && board[2][0] == "O")){
       return true
     }
+
+    
    }
 
    
