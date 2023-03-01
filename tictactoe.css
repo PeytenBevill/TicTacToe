@@ -1,8 +1,11 @@
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
-  background-image: linear-gradient(to bottom, rgb(217, 119, 217), rgb(80, 45, 84));
+  background-image: linear-gradient(to bottom, rgb(119, 217, 122), rgb(45, 84, 45));
 }
 
+.container {
+  margin-bottom: 10%;
+}
 
 .jumbotron {
   margin: 5% auto;
